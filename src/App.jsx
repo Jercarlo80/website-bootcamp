@@ -1,12 +1,15 @@
-import './App.css'
+import React from 'react'
+import Navbar from './components/navbar'
+import Home from './pages/Home'
+import Program from './pages/Program'
 
-function App() {
 
+const App = () => {
   return (
     <div>
-      <p>
-        hello world
-      </p>
+      <Navbar/>
+      <Home/>
+      <Program/>
     </div>
   )
 }
