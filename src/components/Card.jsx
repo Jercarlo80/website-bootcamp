@@ -3,9 +3,10 @@ import modelCard from '../assets/modelCard.png'
 
 const Card = () => {
   return (
-    <div className='w-[352px] h-[293px] rounded-[20px] bg-white mt-[89px] ml-[72px] mb-5'>
+    <div className='w-[352px] h-[293px] rounded-[20px] bg-white mt-[89px] ml-[72px] mb-5 justify-center items-center'>
       <div className='grid grid-rows-2 h-[146.5px] bg-[#152A46] rounded-t-[20px]'>
         <img className='w-[75px] ml-[28px] pt-[16px] ' src={modelCard}/>
+        
         <div className='ml-[120px] relative bottom-[40px]'>
           <h1 className='text-[#FFCD29] font-extrabold text-[16px]'>
             Intensive Bootcamp

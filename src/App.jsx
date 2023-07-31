@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/navbar'
 import Home from './pages/Home'
 import Footer from './components/Footer'
+import Pagination from './components/Pagination'
 
 const App = () => {
   return (

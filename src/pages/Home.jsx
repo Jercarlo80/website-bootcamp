@@ -3,6 +3,7 @@ import Model from '../assets/Model.png';
 import Subs1 from '../assets/Subtract-Yellow.png';
 import Subs2 from '../assets/Subtract-Blue.png';
 import Card from '../components/Card';
+import Pagination from '../components/Pagination';
 
 const Home = () => {
   return (
@@ -25,20 +26,23 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div className='flex gap-3'>
+        <div className='flex gap-3 place-content-center '>
             <Card/>
             <Card/>
             <Card/>
         </div>
-        <div className='flex gap-3'>
+        <div className='flex gap-3 place-content-center '>
             <Card/>
             <Card/>
             <Card/>
         </div>
-        <div className='flex gap-3'>
+        <div className='flex gap-3 place-content-center '>
             <Card/>
             <Card/>
             <Card/>
+        </div>
+        <div>
+            <Pagination/>
         </div>
     </>
   )

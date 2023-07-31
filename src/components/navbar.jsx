@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../assets/Logo.png';
 
 const Navbar = () => {
     const links = [
@@ -27,7 +28,12 @@ const Navbar = () => {
     };
   return (
     <div className="flex justify-between items-center w-full h-20 fixed bg-[#152A46]">
-      <h1 className="text-white font-bold text-[28px] cursor-pointer ml-[120px] mt-[38px] ">LOGO.</h1>
+      <h1 className="w-[70px] h-[70px] cursor-pointer ml-[120px] mt-[38px] flex ">
+        <img src={Logo} /> 
+        <span className='text-[20px] text-white font-bold  mt-[20px]'>
+            Edspert.id
+        </span>
+      </h1>
       <ul className="hidden md:flex   ">
         {links.map(({ id, link, href }) => (
           <li
@@ -43,7 +49,6 @@ const Navbar = () => {
             "
           >
             <a href={href}>{link}</a>
-            
           </li>
         ))}
         <button className='w-[148px] h-[48px] rounded-[50px] bg-[#FF6161] mr-[99px]  mt-[28px] text-white hover:scale-110   '>Masuk/Daftar</button>
